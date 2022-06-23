@@ -29,3 +29,4 @@ class HAN(object):
         output = Dense(self.class_num, activation=self.last_activation)(x_sentence)
         model = Model(inputs=input, outputs=output)
         return model
+ 
