@@ -1,7 +1,7 @@
 from tensorflow.keras import backend as K
 from tensorflow.keras import initializers, regularizers, constraints
 from tensorflow.keras.layers import Layer
- 
+
 class Attention(Layer):
     def __init__(self, step_dim,
                  W_regularizer=None, b_regularizer=None,
