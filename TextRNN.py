@@ -17,7 +17,7 @@ class TextRNN(object):
 
         embedding = Embedding(self.max_features, self.embedding_dims, input_length=self.maxlen)(input)
         x = LSTM(128)(embedding)
-
+        
         output = Dense(self.class_num, activation=self.last_activation)(x)
         model = Model(inputs=input, outputs=output)
         return model
